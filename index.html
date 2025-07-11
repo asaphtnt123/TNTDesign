@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome | Web Designer</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Custom -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" alt="Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Transformo ideias em experiências digitais</h1>
+                    <p class="lead">Web Designer especializado em criar soluções visuais impactantes</p>
+                    <a href="#portfolio" class="btn btn-primary btn-lg mt-3">Ver Portfólio</a>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="img/hero-illustration.svg" alt="Ilustração" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Meus Trabalhos</h2>
+            <div class="row g-4">
+                <!-- Projeto 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card portfolio-item">
+                        <img src="img/projetos/projeto1.jpg" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Website Corporativo</h5>
+                            <p class="card-text">Design moderno para empresa de tecnologia</p>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto1">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card portfolio-item">
+                        <img src="img/projetos/projeto2.jpg" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Identidade Visual</h5>
+                            <p class="card-text">Logo e cartões de visita para restaurante</p>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto2">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Adicione mais projetos seguindo o mesmo padrão -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="img/avatar.jpg" alt="Seu Nome" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-lg-7">
+                    <h2>Sobre Mim</h2>
+                    <p class="lead">Web Designer com 5 anos de experiência criando soluções digitais</p>
+                    <p>Especializado em UI/UX Design, desenvolvimento front-end e branding. Apaixonado por criar experiências que combinam estética e funcionalidade.</p>
+                    
+                    <div class="skills mt-4">
+                        <h5>Habilidades:</h5>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" style="width: 95%">UI/UX Design</div>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" style="width: 90%">HTML/CSS</div>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" style="width: 85%">JavaScript</div>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" style="width: 80%">Branding</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Serviços</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+                            <h4 class="card-title">Web Design</h4>
+                            <p class="card-text">Criação de websites responsivos e modernos com foco em experiência do usuário.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-palette fa-3x mb-3 text-primary"></i>
+                            <h4 class="card-title">UI/UX Design</h4>
+                            <p class="card-text">Design de interfaces intuitivas e agradáveis com prototipagem interativa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-vector-square fa-3x mb-3 text-primary"></i>
+                            <h4 class="card-title">Branding</h4>
+                            <p class="card-text">Desenvolvimento de identidade visual, logotipos e materiais gráficos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Seu Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Informações de Contato</h4>
+                        <p><i class="fas fa-envelope me-2"></i> seuemail@exemplo.com</p>
+                        <p><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="me-3"><i class="fab fa-behance fa-2x"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-dribbble fa-2x"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; <span id="year"></span> Seu Nome. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para detalhes do projeto -->
+    <div class="modal fade" id="modalProjeto1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Website Corporativo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/projetos/projeto1-full.jpg" class="img-fluid mb-3" alt="Projeto 1">
+                    <p>Desenvolvimento completo do website para empresa de tecnologia, incluindo:</p>
+                    <ul>
+                        <li>Design UI/UX moderno</li>
+                        <li>Desenvolvimento front-end responsivo</li>
+                        <li>Integração com CMS</li>
+                    </ul>
+                    <p><strong>Tecnologias usadas:</strong> HTML5, CSS3, JavaScript, Bootstrap</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
